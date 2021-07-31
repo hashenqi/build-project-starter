@@ -3,6 +3,7 @@ package com.czy.study.entity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.Version;
 import lombok.Data;
 
 @Data
@@ -17,4 +18,7 @@ public class Course {
     private Integer userId;
     @TableField("status")
     private String status;
+
+    @Version
+    private Integer version;
 }
